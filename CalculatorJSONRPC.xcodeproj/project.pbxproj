@@ -22,6 +22,7 @@
 		253B894018C7DD9B00D07BC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253B891F18C7DD9B00D07BC7 /* UIKit.framework */; };
 		253B894818C7DD9B00D07BC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 253B894618C7DD9B00D07BC7 /* InfoPlist.strings */; };
 		253B894A18C7DD9B00D07BC7 /* CalculatorJSONRPCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 253B894918C7DD9B00D07BC7 /* CalculatorJSONRPCTests.m */; };
+		2566B36C18C94DE80026C8F1 /* JsonRPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2566B36B18C94DE80026C8F1 /* JsonRPCClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		253B894518C7DD9B00D07BC7 /* CalculatorJSONRPCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorJSONRPCTests-Info.plist"; sourceTree = "<group>"; };
 		253B894718C7DD9B00D07BC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		253B894918C7DD9B00D07BC7 /* CalculatorJSONRPCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorJSONRPCTests.m; sourceTree = "<group>"; };
+		2566B36A18C94DE80026C8F1 /* JsonRPCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonRPCClient.h; sourceTree = "<group>"; };
+		2566B36B18C94DE80026C8F1 /* JsonRPCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonRPCClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				253B893418C7DD9B00D07BC7 /* iOSViewController.m */,
 				253B893618C7DD9B00D07BC7 /* Images.xcassets */,
 				253B892218C7DD9B00D07BC7 /* Supporting Files */,
+				2566B36A18C94DE80026C8F1 /* JsonRPCClient.h */,
+				2566B36B18C94DE80026C8F1 /* JsonRPCClient.m */,
 			);
 			path = CalculatorJSONRPC;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2566B36C18C94DE80026C8F1 /* JsonRPCClient.m in Sources */,
 				253B892C18C7DD9B00D07BC7 /* iOSAppDelegate.m in Sources */,
 				253B892818C7DD9B00D07BC7 /* main.m in Sources */,
 				253B893518C7DD9B00D07BC7 /* iOSViewController.m in Sources */,
@@ -322,7 +328,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -362,7 +368,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -475,6 +481,7 @@
 				253B894F18C7DD9B00D07BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		253B895018C7DD9B00D07BC7 /* Build configuration list for PBXNativeTarget "CalculatorJSONRPCTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +490,7 @@
 				253B895218C7DD9B00D07BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
